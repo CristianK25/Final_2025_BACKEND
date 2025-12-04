@@ -58,14 +58,15 @@ class BaseControllerImpl(BaseController):
             service = self.service_factory(db)
             return service.get_one(id_key)
 
-        @self.router.post("/", response_model=self.schema, status_code=status.HTTP_201_CREATED)
+        @self.router.post("/", status_code=status.HTTP_201_CREATED)
         async def create(
             schema_in: self.schema,
             db: Session = Depends(get_db)
         ):
-            """Create a new record."""
+            """Create a new record returning only ID to avoid recursion."""
             service = self.service_factory(db)
-            return service.save(schema_in)
+            result = service.save(schema_in)
+            return {"id_key": result.id_key, "status": "created"}
 
         @self.router.put("/{id_key}", response_model=self.schema, status_code=status.HTTP_200_OK)
         async def update(
