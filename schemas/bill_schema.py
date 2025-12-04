@@ -22,5 +22,5 @@ class BillSchema(BaseSchema):
     client_id: int = Field(..., description="Client ID reference (required)")  # ✅ Added
 
     # Relationships
-    order: Optional['OrderSchema'] = None
-    client: Optional['ClientSchema'] = None  # ✅ Added
+    order: Optional['OrderSchema'] = Field(default=None, exclude=True)
+    client: Optional['ClientSchema'] = Field(default=None, exclude=True)  # ✅ Added

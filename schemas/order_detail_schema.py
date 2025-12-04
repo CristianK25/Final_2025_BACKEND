@@ -34,5 +34,5 @@ class OrderDetailSchema(BaseSchema):
         description="Product ID reference (required)"
     )
 
-    order: Optional['OrderSchema'] = None
-    product: Optional['ProductSchema'] = None
+    order: Optional['OrderSchema'] = Field(default=None, exclude=True)
+    product: Optional['ProductSchema'] = Field(default=None, exclude=True)
