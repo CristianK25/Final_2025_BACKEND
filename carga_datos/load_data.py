@@ -59,7 +59,7 @@ def load_categories(db: Session) -> dict:
         else:
             existing_count += 1
         
-        category_map[name] = category.id
+        category_map[name] = category.id_key
 
     db.commit()
     logger.info(f"Categories loaded: {new_count} new, {existing_count} existing.")
