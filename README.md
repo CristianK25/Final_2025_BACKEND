@@ -471,6 +471,19 @@ curl http://localhost:8000/health_check
 
 # Access interactive docs
 open http://localhost:8000/docs
+
+#### 6. Data Seeding (Bulk Load)
+
+To populate the database with initial categories and products (useful for development testing):
+
+```bash
+# Ensure containers are running
+docker-compose up -d
+
+# Run the data loading script inside the API container
+# This loads data from `carga_datos/categories.json` and `carga_datos/products.json`
+docker-compose exec api python -m carga_datos.load_data
+```
 ```
 
 ### First API Calls
