@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Smartphone Galaxy S21",
+        "price": 799.99,
+        "stock": 50,
+        "category": "Electrónica"
+    },
+    {
+        "name": "Laptop Dell XPS 15",
+        "price": 1200.00,
+        "stock": 30,
+        "category": "Electrónica"
+    },
+    {
+        "name": "Auriculares Sony WH-1000XM4",
+        "price": 348.00,
+        "stock": 100,
+        "category": "Electrónica"
+    },
+    {
+        "name": "Camiseta Algodón Negra",
+        "price": 15.50,
+        "stock": 200,
+        "category": "Ropa"
+    },
+    {
+        "name": "Jeans Levis 501",
+        "price": 60.00,
+        "stock": 150,
+        "category": "Ropa"
+    },
+    {
+        "name": "Zapatillas Nike Air Max",
+        "price": 120.00,
+        "stock": 80,
+        "category": "Ropa"
+    },
+    {
+        "name": "Sofá 3 Cuerpos",
+        "price": 450.00,
+        "stock": 10,
+        "category": "Hogar"
+    },
+    {
+        "name": "Lámpara de Pie",
+        "price": 45.00,
+        "stock": 60,
+        "category": "Hogar"
+    },
+    {
+        "name": "Pelota de Fútbol Adidas",
+        "price": 25.00,
+        "stock": 100,
+        "category": "Deportes"
+    },
+    {
+        "name": "Mat de Yoga",
+        "price": 20.00,
+        "stock": 150,
+        "category": "Deportes"
+    }
+]
